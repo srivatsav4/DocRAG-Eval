@@ -1,0 +1,13 @@
+{
+  "_comment": "Tunable hyper-parameters. Values are UNCALIBRATED defaults/hypotheses until tuned on the DEV split. Never tune on TEST.",
+  "bm25": {"k1": 1.5, "b": 0.75},
+  "rrf_k": 60,
+  "rerank_depth": 30,
+  "evidence_weights": {"relevance": 0.35, "semantic": 0.20, "coverage": 0.25, "agreement": 0.10, "support": 0.10},
+  "semantic_floor": 0.45,
+  "semantic_ceiling": 0.85,
+  "agreement_depth": 3,
+  "support_min_chunk_coverage": 0.4,
+  "thresholds": {"answer": 0.65, "limited": 0.45, "oos_boost": 0.10},
+  "citation_min_support": 0.6
+}

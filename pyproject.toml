@@ -1,0 +1,13 @@
+[project]
+name = "docrag-eval"
+version = "0.1.0"
+description = "Evaluation-first, evidence-adaptive RAG for technical documentation"
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]

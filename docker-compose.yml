@@ -1,0 +1,31 @@
+# PostgreSQL + pgvector is the only required container. Ollama runs on the HOST (ollama serve).
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-docrag}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: ${POSTGRES_DB:-docrag}
+    ports: ["5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-docrag}"]
+      interval: 5s
+      retries: 10
+
+  # Optional: run the API in Docker (`docker compose --profile app up`). Reaches host Ollama via host.docker.internal.
+  api:
+    profiles: ["app"]
+    build: .
+    depends_on:
+      db: { condition: service_healthy }
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-docrag}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-docrag}
+      OLLAMA_URL: http://host.docker.internal:11434
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:3b}
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    ports: ["8000:8000"]
+    volumes: ["./data:/app/data", "./results:/app/results", "./configs:/app/configs"]
+
+volumes:
+  pgdata:

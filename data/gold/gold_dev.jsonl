@@ -1,0 +1,50 @@
+{"id": "Q002", "question": "Which parameter sets the maximum number of concurrent connections?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["runtime-config-connection"], "label_status": "unverified-seed"}
+{"id": "Q006", "question": "What does the FULL option of VACUUM do?", "type": "LOOKUP", "difficulty": "medium", "gold_sections": ["sql-vacuum"], "label_status": "unverified-seed"}
+{"id": "Q007", "question": "What is the default value of shared_buffers?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["runtime-config-resource"], "label_status": "unverified-seed"}
+{"id": "Q010", "question": "Which parameter turns autovacuum on or off?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["runtime-config-autovacuum"], "label_status": "unverified-seed"}
+{"id": "Q011", "question": "What is the syntax for adding a column with ALTER TABLE?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["sql-altertable"], "label_status": "unverified-seed"}
+{"id": "Q012", "question": "Which data type should I use to store JSON that supports indexing?", "type": "LOOKUP", "difficulty": "medium", "gold_sections": ["datatype-json"], "label_status": "unverified-seed"}
+{"id": "Q013", "question": "What is the default TCP port the server listens on?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["runtime-config-connection"], "label_status": "unverified-seed"}
+{"id": "Q014", "question": "Which function returns the current date and time?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["functions-datetime"], "label_status": "unverified-seed"}
+{"id": "Q015", "question": "What output formats does pg_dump support?", "type": "LOOKUP", "difficulty": "medium", "gold_sections": ["app-pgdump"], "label_status": "unverified-seed"}
+{"id": "Q016", "question": "What does EXPLAIN ANALYZE do?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["sql-explain"], "label_status": "unverified-seed"}
+{"id": "Q017", "question": "Which authentication methods can pg_hba.conf use?", "type": "LOOKUP", "difficulty": "medium", "gold_sections": ["auth-methods"], "label_status": "unverified-seed"}
+{"id": "Q018", "question": "What is the syntax of CREATE ROLE?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["sql-createrole"], "label_status": "unverified-seed"}
+{"id": "Q019", "question": "What does the wal_level parameter control?", "type": "LOOKUP", "difficulty": "medium", "gold_sections": ["runtime-config-wal"], "label_status": "unverified-seed"}
+{"id": "Q020", "question": "What is the TOAST mechanism threshold for compressing large values?", "type": "LOOKUP", "difficulty": "hard", "gold_sections": ["storage-toast"], "label_status": "unverified-seed"}
+{"id": "Q022", "question": "Which index types does PostgreSQL support?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["indexes-types"], "label_status": "unverified-seed"}
+{"id": "Q023", "question": "What information does ANALYZE collect?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["sql-analyze"], "label_status": "unverified-seed"}
+{"id": "Q027", "question": "How do I create an index on an expression?", "type": "HOW_TO", "difficulty": "easy", "gold_sections": ["indexes-expressional"], "label_status": "unverified-seed"}
+{"id": "Q028", "question": "How do I back up a database with pg_dump?", "type": "HOW_TO", "difficulty": "easy", "gold_sections": ["backup-dump"], "label_status": "unverified-seed"}
+{"id": "Q029", "question": "How do I restore a dump using pg_restore?", "type": "HOW_TO", "difficulty": "easy", "gold_sections": ["app-pgrestore"], "label_status": "unverified-seed"}
+{"id": "Q033", "question": "How do I configure client authentication in pg_hba.conf?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["auth-pg-hba-conf"], "label_status": "unverified-seed"}
+{"id": "Q035", "question": "How do I speed up loading large amounts of data?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["populate"], "label_status": "unverified-seed"}
+{"id": "Q037", "question": "How do I set up a standby server for streaming replication?", "type": "HOW_TO", "difficulty": "hard", "gold_sections": ["warm-standby"], "label_status": "unverified-seed"}
+{"id": "Q038", "question": "How do I set up logical replication between two servers?", "type": "HOW_TO", "difficulty": "hard", "gold_sections": ["logical-replication"], "label_status": "unverified-seed"}
+{"id": "Q040", "question": "How do I define a unique constraint on a table?", "type": "HOW_TO", "difficulty": "easy", "gold_sections": ["ddl-constraints"], "label_status": "unverified-seed"}
+{"id": "Q041", "question": "How do I write a recursive or WITH query?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["queries-with"], "label_status": "unverified-seed"}
+{"id": "Q042", "question": "How do I make sure vacuuming runs routinely?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["routine-vacuuming"], "label_status": "unverified-seed"}
+{"id": "Q043", "question": "How do I rebuild a bloated index?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["routine-reindex"], "label_status": "unverified-seed"}
+{"id": "Q045", "question": "How do I create a role that is allowed to log in?", "type": "HOW_TO", "difficulty": "easy", "gold_sections": ["role-attributes"], "label_status": "unverified-seed"}
+{"id": "Q046", "question": "How do I create a schema and control the search path?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["ddl-schemas"], "label_status": "unverified-seed"}
+{"id": "Q047", "question": "How do I use window functions in a query?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["tutorial-window"], "label_status": "unverified-seed"}
+{"id": "Q048", "question": "How do I set up full text search on a text column?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["textsearch-intro"], "label_status": "unverified-seed"}
+{"id": "Q050", "question": "How do I take a base backup with pg_basebackup?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["app-pgbasebackup"], "label_status": "unverified-seed"}
+{"id": "Q051", "question": "How do I set up a standby server together with WAL archiving?", "type": "MULTI_SECTION", "difficulty": "hard", "gold_sections": ["warm-standby", "continuous-archiving"], "label_status": "unverified-seed"}
+{"id": "Q052", "question": "What are the differences between SQL dump backups and continuous archiving backups?", "type": "MULTI_SECTION", "difficulty": "hard", "gold_sections": ["backup-dump", "continuous-archiving"], "label_status": "unverified-seed"}
+{"id": "Q053", "question": "How can index types and EXPLAIN output be used together to tune a slow query?", "type": "MULTI_SECTION", "difficulty": "hard", "gold_sections": ["indexes-types", "using-explain"], "label_status": "unverified-seed"}
+{"id": "Q054", "question": "How do autovacuum settings relate to routine vacuuming and table bloat?", "type": "MULTI_SECTION", "difficulty": "medium", "gold_sections": ["routine-vacuuming", "runtime-config-autovacuum"], "label_status": "unverified-seed"}
+{"id": "Q057", "question": "How do I secure connections using SSL and pg_hba.conf authentication together?", "type": "MULTI_SECTION", "difficulty": "hard", "gold_sections": ["ssl-tcp", "auth-pg-hba-conf"], "label_status": "unverified-seed"}
+{"id": "Q058", "question": "What is the difference between a view and a materialized view?", "type": "MULTI_SECTION", "difficulty": "medium", "gold_sections": ["sql-createview", "sql-creatematerializedview"], "label_status": "unverified-seed"}
+{"id": "Q063", "question": "How does the write-ahead log relate to checkpoints and replication settings?", "type": "MULTI_SECTION", "difficulty": "hard", "gold_sections": ["wal-intro", "runtime-config-wal"], "label_status": "unverified-seed"}
+{"id": "Q064", "question": "How do unique constraints relate to unique indexes?", "type": "MULTI_SECTION", "difficulty": "medium", "gold_sections": ["ddl-constraints", "indexes-unique"], "label_status": "unverified-seed"}
+{"id": "Q065", "question": "How do triggers and PL/pgSQL trigger functions work together?", "type": "MULTI_SECTION", "difficulty": "medium", "gold_sections": ["sql-createtrigger", "plpgsql-trigger"], "label_status": "unverified-seed"}
+{"id": "Q066", "question": "How do I configure PostgreSQL to control an unrelated technology that is not documented here?", "type": "OUT_OF_SCOPE", "difficulty": "hard", "gold_sections": [], "label_status": "unverified-seed"}
+{"id": "Q068", "question": "What is the best MongoDB aggregation pipeline for sales data?", "type": "OUT_OF_SCOPE", "difficulty": "easy", "gold_sections": [], "label_status": "unverified-seed"}
+{"id": "Q069", "question": "How do I train a neural network in PyTorch?", "type": "OUT_OF_SCOPE", "difficulty": "easy", "gold_sections": [], "label_status": "unverified-seed"}
+{"id": "Q074", "question": "How do I configure an Nginx reverse proxy with TLS?", "type": "OUT_OF_SCOPE", "difficulty": "easy", "gold_sections": [], "label_status": "unverified-seed"}
+{"id": "Q075", "question": "Which Redis command sets a key expiry?", "type": "OUT_OF_SCOPE", "difficulty": "easy", "gold_sections": [], "label_status": "unverified-seed"}
+{"id": "Q076", "question": "How do I use groupby in Pandas?", "type": "OUT_OF_SCOPE", "difficulty": "easy", "gold_sections": [], "label_status": "unverified-seed"}
+{"id": "Q077", "question": "Which new features were added in PostgreSQL 25?", "type": "OUT_OF_SCOPE", "difficulty": "hard", "gold_sections": [], "label_status": "unverified-seed"}
+{"id": "Q078", "question": "What is the built-in PostgreSQL command for training machine learning models?", "type": "OUT_OF_SCOPE", "difficulty": "hard", "gold_sections": [], "label_status": "unverified-seed"}
+{"id": "Q080", "question": "How do I run terraform apply for my cloud infrastructure?", "type": "OUT_OF_SCOPE", "difficulty": "easy", "gold_sections": [], "label_status": "unverified-seed"}

@@ -1,0 +1,30 @@
+{"id": "Q001", "question": "What is the default value of work_mem?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["runtime-config-resource"], "label_status": "unverified-seed"}
+{"id": "Q003", "question": "What is the default transaction isolation level in PostgreSQL?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["transaction-iso"], "label_status": "unverified-seed"}
+{"id": "Q004", "question": "What is the syntax of the CREATE INDEX command?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["sql-createindex"], "label_status": "unverified-seed"}
+{"id": "Q005", "question": "Which system view shows currently running queries?", "type": "LOOKUP", "difficulty": "medium", "gold_sections": ["monitoring-stats"], "label_status": "unverified-seed"}
+{"id": "Q008", "question": "Which parameter logs statements that run longer than a given duration?", "type": "LOOKUP", "difficulty": "medium", "gold_sections": ["runtime-config-logging"], "label_status": "unverified-seed"}
+{"id": "Q009", "question": "Which formats does the COPY command accept?", "type": "LOOKUP", "difficulty": "medium", "gold_sections": ["sql-copy"], "label_status": "unverified-seed"}
+{"id": "Q021", "question": "What does the GRANT command do for tables?", "type": "LOOKUP", "difficulty": "easy", "gold_sections": ["sql-grant"], "label_status": "unverified-seed"}
+{"id": "Q024", "question": "What is the syntax of CREATE TRIGGER?", "type": "LOOKUP", "difficulty": "medium", "gold_sections": ["sql-createtrigger"], "label_status": "unverified-seed"}
+{"id": "Q025", "question": "What does TRUNCATE do and how does it differ from DELETE?", "type": "LOOKUP", "difficulty": "medium", "gold_sections": ["sql-truncate"], "label_status": "unverified-seed"}
+{"id": "Q026", "question": "How do I create a partial index in PostgreSQL?", "type": "HOW_TO", "difficulty": "easy", "gold_sections": ["indexes-partial"], "label_status": "unverified-seed"}
+{"id": "Q030", "question": "How do I set up continuous archiving for point-in-time recovery?", "type": "HOW_TO", "difficulty": "hard", "gold_sections": ["continuous-archiving"], "label_status": "unverified-seed"}
+{"id": "Q031", "question": "How do I create a partitioned table?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["ddl-partitioning"], "label_status": "unverified-seed"}
+{"id": "Q032", "question": "How do I enable SSL connections to the server?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["ssl-tcp"], "label_status": "unverified-seed"}
+{"id": "Q034", "question": "How do I read EXPLAIN output to understand a query plan?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["using-explain"], "label_status": "unverified-seed"}
+{"id": "Q036", "question": "How do I create a materialized view?", "type": "HOW_TO", "difficulty": "easy", "gold_sections": ["sql-creatematerializedview"], "label_status": "unverified-seed"}
+{"id": "Q039", "question": "How do I restrict rows per user with row security policies?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["ddl-rowsecurity"], "label_status": "unverified-seed"}
+{"id": "Q044", "question": "How do I lock a table explicitly inside a transaction?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["explicit-locking"], "label_status": "unverified-seed"}
+{"id": "Q049", "question": "How do I structure a PL/pgSQL function body?", "type": "HOW_TO", "difficulty": "medium", "gold_sections": ["plpgsql-structure"], "label_status": "unverified-seed"}
+{"id": "Q055", "question": "How does MVCC relate to transaction isolation levels?", "type": "MULTI_SECTION", "difficulty": "hard", "gold_sections": ["mvcc-intro", "transaction-iso"], "label_status": "unverified-seed"}
+{"id": "Q056", "question": "How do I partition a table and then create indexes on the partitions?", "type": "MULTI_SECTION", "difficulty": "hard", "gold_sections": ["ddl-partitioning", "sql-createindex"], "label_status": "unverified-seed"}
+{"id": "Q059", "question": "How do roles, GRANT privileges and row security combine to control access?", "type": "MULTI_SECTION", "difficulty": "hard", "gold_sections": ["role-attributes", "sql-grant", "ddl-rowsecurity"], "label_status": "unverified-seed"}
+{"id": "Q060", "question": "How do I tune memory settings and monitor their effect with statistics views?", "type": "MULTI_SECTION", "difficulty": "hard", "gold_sections": ["runtime-config-resource", "monitoring-stats"], "label_status": "unverified-seed"}
+{"id": "Q061", "question": "How do I bulk load with COPY and then refresh planner statistics?", "type": "MULTI_SECTION", "difficulty": "medium", "gold_sections": ["sql-copy", "sql-analyze"], "label_status": "unverified-seed"}
+{"id": "Q062", "question": "How do the JSON data types and JSON functions work together?", "type": "MULTI_SECTION", "difficulty": "medium", "gold_sections": ["datatype-json", "functions-json"], "label_status": "unverified-seed"}
+{"id": "Q067", "question": "How do I deploy a Kubernetes cluster on AWS?", "type": "OUT_OF_SCOPE", "difficulty": "easy", "gold_sections": [], "label_status": "unverified-seed"}
+{"id": "Q070", "question": "What is the capital of France?", "type": "OUT_OF_SCOPE", "difficulty": "easy", "gold_sections": [], "label_status": "unverified-seed"}
+{"id": "Q071", "question": "How do I build a React component with hooks?", "type": "OUT_OF_SCOPE", "difficulty": "easy", "gold_sections": [], "label_status": "unverified-seed"}
+{"id": "Q072", "question": "Give me a recipe for chocolate cake.", "type": "OUT_OF_SCOPE", "difficulty": "easy", "gold_sections": [], "label_status": "unverified-seed"}
+{"id": "Q073", "question": "How do I tune the MySQL InnoDB buffer pool?", "type": "OUT_OF_SCOPE", "difficulty": "medium", "gold_sections": [], "label_status": "unverified-seed"}
+{"id": "Q079", "question": "Does PostgreSQL include a built-in command for sending email through SMTP?", "type": "OUT_OF_SCOPE", "difficulty": "hard", "gold_sections": [], "label_status": "unverified-seed"}
